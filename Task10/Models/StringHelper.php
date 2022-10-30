@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Task10;
 
+// The class with the set of methods for working with string arrays
 class StringHelper
 {
     private string $str;
