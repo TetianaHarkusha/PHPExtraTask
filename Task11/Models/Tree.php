@@ -13,7 +13,6 @@ class Tree
 {
     /**
      * The method that created an object of a class Directory or File
-     * one level down directories from the array
      *
      * @param string $name The directory or file full 
      * @return Directory or File
