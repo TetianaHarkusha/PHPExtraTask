@@ -4,19 +4,21 @@ declare(strict_types=1);
 
 namespace Task11;
 
+// Abstract class for object filesystem
 abstract class Item
 {
     protected string $name; // a directory or a file name
-    protected string $date; // a file/directory creation date
-    
+    protected int $date; // a file/directory creation date
+
     /**
      * constructor method for the class
-     * 
+     *
      * @param $string $name
-     * @param $string $int
+     * @return void
      */
-    public function __construct($name, $date)
+    public function __construct(string $name)
     {
+        $this->name = $name;
         $this->date = filectime($name);
     }
 
@@ -29,7 +31,7 @@ abstract class Item
     {
         return $this->name;
     }
-    
+
     /**
      * The method get date the property name
      *
@@ -37,6 +39,6 @@ abstract class Item
      */
     public function getDate(): string
     {
-        return $this->name;
+        return date('d.m.Y', $this->date);
     }
 }
