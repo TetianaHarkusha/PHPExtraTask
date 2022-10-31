@@ -83,7 +83,7 @@ class Tree
     }
 
     /**
-     * The static method that adds all subdirectories (with a full path)
+     * The method that adds all subdirectories (with a full path)
      * to directories from the array
      *
      * @param array $listDir The list of directories with a full path
