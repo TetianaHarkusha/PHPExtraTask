@@ -2,13 +2,14 @@
   "autoload": {
     "psr-4": {
       "Task10\\": "Task10/Models/",
-      "Task11\\": "Task11/Models/"
+      "Task11\\": "Task11/Models/",
+      "Task14\\": "Task14/Models/"
     }
   },
   "require": {
     "friendsofphp/php-cs-fixer": "^3.12"
   },
   "scripts": {
-    "format": "./vendor/bin/php-cs-fixer fix Task11"
+    "format": "./vendor/bin/php-cs-fixer fix Task14"
   }
 }
